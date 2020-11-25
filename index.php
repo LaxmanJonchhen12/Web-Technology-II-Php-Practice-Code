@@ -118,92 +118,102 @@
 
 
 // array in php
-$VCS = array("Git","Mercurial","SVN");
-print_r($VCS);
-echo "<br>";
-$Platform[] = "StackOverflow";
-$Platform[] = "Github";
-$Platform[] = "Linked in";
-$Platform[] = "Redit";
-print_r($Platform);
-echo "<br>";
-echo "<br>";
+// $VCS = array("Git","Mercurial","SVN");
+// print_r($VCS);
+// echo "<br>";
+// $Platform[] = "StackOverflow";
+// $Platform[] = "Github";
+// $Platform[] = "Linked in";
+// $Platform[] = "Redit";
+// print_r($Platform);
+// echo "<br>";
+// echo "<br>";
 // retrieving elements from array
 // using for loop for retrieving value
-for($i=0; $i<4; $i++)
-{
-    echo("$i:$Platform[$i]<br>");
-}
-echo "<br>";
+// for($i=0; $i<4; $i++)
+// {
+//     echo("$i:$Platform[$i]<br>");
+// }
+// echo "<br>";
 // associative array in php
-$car['luxury']= "BMW";
-$car['speed']= "Bugatti";
-$car['comfort'] = "Rolls Royce ";
+// $car['luxury']= "BMW";
+// $car['speed']= "Bugatti";
+// $car['comfort'] = "Rolls Royce ";
 
-echo $car['speed'];
-echo "<br>";
-echo $car['comfort'];
-echo "<br>";
-echo "<br>";
+// echo $car['speed'];
+// echo "<br>";
+// echo $car['comfort'];
+// echo "<br>";
+// echo "<br>";
 
 // adding items to array using array keyword
-$players = array("Ronaldo"=>"35", "Messi"=>"33", "Neymar"=>"28");
-foreach($players as $x => $x_value) {
-    echo "Key=" . $x . ", Value=" . $x_value;
-    echo "<br>";
-  }
+// $players = array("Ronaldo"=>"35", "Messi"=>"33", "Neymar"=>"28");
+// foreach($players as $x => $x_value) {
+//     echo "Key=" . $x . ", Value=" . $x_value;
+//     echo "<br>";
+//   }
 
-echo "<br>";
-echo "<br>";
+// echo "<br>";
+// echo "<br>";
 
 //   printing all value of indexed array
-$food=array("Biryani","Momo","Sekuwa");
+// $food=array("Biryani","Momo","Sekuwa");
 // printing value of indexed array
-$arrLength=count($food);
-for($y=0; $y<$arrLength; $y++)
-{
-    echo$food[$y];
-    echo "<br>";
-}
+// $arrLength=count($food);
+// for($y=0; $y<$arrLength; $y++)
+// {
+//     echo$food[$y];
+//     echo "<br>";
+// }
 
-echo "<br>";
-echo "<br>";
+// echo "<br>";
+// echo "<br>";
 
 // multi dimensional array in php
-$cars = array (
-    array("Volvo",22,18),
-    array("BMW",15,13),
-    array("Saab",5,2),
-    array("Land Rover",17,15)
-  );
+// $cars = array (
+//     array("Volvo",22,18),
+//     array("BMW",15,13),
+//     array("Saab",5,2),
+//     array("Land Rover",17,15)
+//   );
     
-  echo $cars[0][0].": In stock: ".$cars[0][1].", sold: ".$cars[0][2].".<br>";
-  echo $cars[1][0].": In stock: ".$cars[1][1].", sold: ".$cars[1][2].".<br>";
-  echo $cars[2][0].": In stock: ".$cars[2][1].", sold: ".$cars[2][2].".<br>";
-  echo $cars[3][0].": In stock: ".$cars[3][1].", sold: ".$cars[3][2].".<br>";
+//   echo $cars[0][0].": In stock: ".$cars[0][1].", sold: ".$cars[0][2].".<br>";
+//   echo $cars[1][0].": In stock: ".$cars[1][1].", sold: ".$cars[1][2].".<br>";
+//   echo $cars[2][0].": In stock: ".$cars[2][1].", sold: ".$cars[2][2].".<br>";
+//   echo $cars[3][0].": In stock: ".$cars[3][1].", sold: ".$cars[3][2].".<br>";
 
-echo "<br>";
-echo "<br>";
+// echo "<br>";
+// echo "<br>";
 
 
 // multi dimensional associative array in php
-$products = array( "paper" => array(
-    'copier' => "Copier & Multipurpose",
-    'inkjet' => "Inkjet Printer",
-    'laser' => "Laser Printer",
-    'photo' => "Photographic Paper"),
-    'pens' => array(
-    'ball' => "Ball Point",
-    'hilite' => "Highlighters",
-    'marker' => "Markers"), );
+// $products = array( "paper" => array(
+//     'copier' => "Copier & Multipurpose",
+//     'inkjet' => "Inkjet Printer",
+//     'laser' => "Laser Printer",
+//     'photo' => "Photographic Paper"),
+//     'pens' => array(
+//     'ball' => "Ball Point",
+//     'hilite' => "Highlighters",
+//     'marker' => "Markers"), );
     
 
-echo "<pre>";
-foreach ($products as $section => $items)
-foreach ($items as $key => $value)
-echo "$section:\t$key\t($value)<br>";
-echo "</pre>";
+// echo "<pre>";
+// foreach ($products as $section => $items)
+// foreach ($items as $key => $value)
+// echo "$section:\t$key\t($value)<br>";
+// echo "</pre>";
 
+function helloWorld(){
+  echo "hello world";
+}
 
+helloWorld();
+echo "<br>";
+function printName($name,$age){
+  echo "hello ${name} is ${age}<br>";
+}
+printName("laxman",20);
+printName("Getify",23);
 
 ?>
